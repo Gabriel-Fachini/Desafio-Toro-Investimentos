@@ -42,3 +42,15 @@ body{
     color: white;
     transition: 0.3s;
 }
+
+.home-figure{
+    padding-top: 90px;
+    padding-left: 50px
+}
+
+.center-items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
