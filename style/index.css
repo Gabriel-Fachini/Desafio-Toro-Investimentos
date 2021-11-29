@@ -9,4 +9,36 @@ body{
     font-size: 14px;
     color: rgb(31, 7, 59);
     font-weight: 600;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.navbar-item:hover{
+    color: gray;
+}
+
+.button-purple{
+    background-color: rgb(97, 49, 180);
+    border: 1px solid rgb(97, 49, 180);
+    border-radius: 6px;
+    padding: 8px 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.button-outline-purple{
+    background-color: transparent;
+    border: 1px solid rgb(97, 49, 180);
+    border-radius: 6px;
+    padding: 8px 20px;
+    color: rgb(97, 49, 180);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.button-outline-purple:hover{
+    background-color: rgb(97, 49, 180);
+    color: white;
+    transition: 0.3s;
 }
