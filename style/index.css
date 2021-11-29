@@ -1,0 +1,12 @@
+body{
+    font-family: url(https://www.toroinvestimentos.com.br/fonts/DINPro-Bold.woff);
+    font-family: url(https://www.toroinvestimentos.com.br/fonts/DINPro.woff);
+    font-size: 18px;
+    color: rgb(31, 7, 59);
+}
+
+.navbar-item{
+    font-size: 14px;
+    color: rgb(31, 7, 59);
+    font-weight: 600;
+}
