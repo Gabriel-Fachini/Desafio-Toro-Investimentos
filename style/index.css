@@ -1,8 +1,11 @@
 body{
-    font-family: url(https://www.toroinvestimentos.com.br/fonts/DINPro-Bold.woff);
-    font-family: url(https://www.toroinvestimentos.com.br/fonts/DINPro.woff);
+    font-family: D-DIN-PRO;
     font-size: 18px;
     color: rgb(31, 7, 59);
+}
+
+.marker{
+    background-color: tomato;
 }
 
 .navbar-item{
@@ -19,18 +22,24 @@ body{
 
 .button-purple{
     background-color: rgb(97, 49, 180);
-    border: 1px solid rgb(97, 49, 180);
-    border-radius: 6px;
-    padding: 8px 20px;
+    border: 0px solid rgb(97, 49, 180);
+    border-radius: 5px;
+    padding: 16px 30px;
     color: white;
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 16px;
+    width: fit-content;
+}
+
+.button-purple:hover{
+    background-color: rgb(69, 33, 133);
+    transition: 0.3s;
 }
 
 .button-outline-purple{
     background-color: transparent;
-    border: 1px solid rgb(97, 49, 180);
-    border-radius: 6px;
+    border: 2px solid rgb(97, 49, 180);
+    border-radius: 4px;
     padding: 8px 20px;
     color: rgb(97, 49, 180);
     font-weight: 500;
@@ -43,6 +52,10 @@ body{
     transition: 0.3s;
 }
 
+.col-5 {
+    margin-right: 50px;
+}
+
 .home-figure{
     padding-top: 90px;
     padding-left: 50px
@@ -50,7 +63,29 @@ body{
 
 .center-items{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: left;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-bottom: 0;
+}
+
+.margin-home{
+    padding-bottom: 30px;
+}
+
+.card{
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    background-color: rgb(51, 0, 102);
+}
+
+.row{
+    margin-bottom: 12%;
 }
