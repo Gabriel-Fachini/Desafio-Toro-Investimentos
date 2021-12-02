@@ -1,0 +1,42 @@
+body{
+    font-family: D-DIN-PRO;
+    font-size: 18px;
+    color: rgb(209, 169, 255);
+    width: 100vw;
+    height: 100vh;
+}
+
+.card-form{
+    width: 30vw;
+    height: auto;
+    background-color: rgb(97, 49, 180);
+    padding: 30px;
+    border-radius: 5px;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.35));
+}
+
+label{
+    color: white;
+    color: rgb(209, 169, 255);
+}
+
+input:hover{
+    background-color: rgb(212, 212, 212);
+    transition: 0.3s;
+}
+
+.button-purple{
+    background-color: rgb(31, 7, 59);
+    border: 0px solid rgb(97, 49, 180);
+    border-radius: 5px;
+    padding: 12px 40px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    width: fit-content;
+}
+
+.button-purple:hover{
+    background-color: rgb(69, 33, 133);
+    transition: 0.3s;
+}
