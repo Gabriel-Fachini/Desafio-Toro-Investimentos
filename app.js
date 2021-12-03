@@ -12,12 +12,15 @@ app.set('view engine', 'ejs')
 
 
 app.get('/', (req, res) => {
-    return res.json([{ name: 'gabriel'}, {name :'diego'}
-    ])
+    return res.render('index')
 })
 
 app.get('/register', (req, res) =>{
     res.render('register')
+})
+
+app.get('/signup', (req, res) =>{
+    res.render('signin')
 })
 
 app.listen(3456)
