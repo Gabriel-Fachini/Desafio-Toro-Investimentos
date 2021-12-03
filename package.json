@@ -1,0 +1,27 @@
+{
+  "name": "desafio-toro-investimentos",
+  "version": "1.0.0",
+  "description": ">## **Introdução**\r Após um bate-papo com e equipe da toro investimentos foi proposto um desafio. Foram me passado algumas User Stories, situações reais em que eles trabalham dentro do ambiente de trabalho. Nesse repositório irei expor todo o meu desenvolvimento do desafio.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gabriel-Fachini/Desafio-Toro-Investimentos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gabriel-Fachini/Desafio-Toro-Investimentos/issues"
+  },
+  "homepage": "https://github.com/Gabriel-Fachini/Desafio-Toro-Investimentos#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2"
+  }
+}
