@@ -27,6 +27,7 @@ mongoose.connect('mongodb://localhost/toroinvestimentos').then(() => {
     }))
     app.use(passport.initialize())
     app.use(passport.session())
+    
     //Configurações de arquivos estáticos
     app.use(express.static('style'))
     app.use(express.static('images'))

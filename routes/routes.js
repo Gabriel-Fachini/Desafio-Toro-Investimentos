@@ -161,7 +161,7 @@ function validarCPF(cpf) {
                             newUser.password = hash
 
                             //Salvando o novo usuário no banco de dados
-                            console.log(newUser.password)
+
                             new user(newUser).save().then(() => {
                                 res.redirect('/register/auth/sucess')
                             }).catch((error) => {
