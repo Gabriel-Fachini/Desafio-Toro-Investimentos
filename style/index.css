@@ -34,6 +34,7 @@ body{
 .button-purple:hover{
     background-color: rgb(69, 33, 133);
     transition: 0.3s;
+    color: white;
 }
 
 .button-outline-purple{

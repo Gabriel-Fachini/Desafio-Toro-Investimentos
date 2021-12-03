@@ -15,22 +15,22 @@
         <img src="logo.svg" width="200">
         <div class="card-form m-4">
             <h1>Cadastre-se grátis para investir</h1>
-            <form action="/rotaqualquer" method="POST">
+            <form action="/register/auth" method="POST">
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nome completo:</label>
-                    <input type="text"  class="form-control" id="name" aria-describedby="emailHelp">
+                    <label class="form-label">Nome completo:</label>
+                    <input type="text" class="form-control" id="name">
                   </div>
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">E-mail:</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <label class="form-label">E-mail:</label>
+                  <input type="email" class="form-control" id="email">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">CPF:</label>
-                    <input type="tel" class="form-control" id="exampleInputPassword1">
+                    <label class="form-label">CPF:</label>
+                    <input type="tel" class="form-control" id="password">
                   </div>
                 <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Senha (6 a 16 caracteres):</label>
-                  <input type="password" class="form-control" maxlength="16" id="exampleInputPassword1">
+                  <label class="form-label">Senha (6 a 16 caracteres):</label>
+                  <input type="password" class="form-control" maxlength="16" id="password">
                 </div>
                 <button type="submit" class="button-purple">Continue</button>
               </form>
