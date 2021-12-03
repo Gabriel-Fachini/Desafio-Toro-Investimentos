@@ -27,9 +27,7 @@ No desenvolvimento desse projeto utilizarei das ferramentas básicas de desenvol
 2. CSS
 3. JavaScript
 4. Bootstrap
-5. AngularJS
-6. NodeJS
-7. MongoDB
-8. Figma
+5. NodeJS
+6. MongoDB
+7. Figma
    
-_**Para uma melhor eficiência e organização utilizarei o Trello como e o método SCRUM para me orientar nesse processo.**_
