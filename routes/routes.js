@@ -18,7 +18,6 @@ function validarCPF(cpf) {
 	cpf = cpf.replace(/[^\d]+/g,'')
 
 	if(cpf == null) {
-        console.log("vazio")
         return false
     }
 	// Elimina CPFs invalidos conhecidos
@@ -34,7 +33,6 @@ function validarCPF(cpf) {
 		cpf == "77777777777" || 
 		cpf == "88888888888" || 
 		cpf == "99999999999") {
-            console.log("cpf numeros iguais")
             return false;	
         }
 				
@@ -46,7 +44,6 @@ function validarCPF(cpf) {
 		if (rev == 10 || rev == 11)		
 			rev = 0;	
 		if (rev != parseInt(cpf.charAt(9)))	{
-            console.log("aqui 1")
             return false;
         }	
 					
@@ -58,7 +55,6 @@ function validarCPF(cpf) {
 	if (rev == 10 || rev == 11)	
 		rev = 0;	
 	if (rev != parseInt(cpf.charAt(10))) {
-        console.log("aqui 2")
         return false;
     }
 				
