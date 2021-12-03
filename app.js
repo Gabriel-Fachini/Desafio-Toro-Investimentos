@@ -1,11 +1,16 @@
-//Importando as bibliotecas necessárias na aplicação
+//Importando os módulos necessários para aplicação
 const express = require('express')
-const cors = require('cors')
 const bodyparser = require('body-parser')
 const mongoose = require('mongoose')
-const app = express()
+const session = require('express-session')
 const routes = require('./routes/routes')
+const passport = require('passport')
+require('./config/auth')(passport)
 
+//Configurações iniciais da aplicação
+const app = express()
+
+//Conectando ao banco de dados
 mongoose.Promise = global.Promise
 mongoose.connect('mongodb://localhost/toroinvestimentos').then(() => {
     console.log("Conectado ao banco de dados com sucesso!")
@@ -13,34 +18,30 @@ mongoose.connect('mongodb://localhost/toroinvestimentos').then(() => {
     console.log(error)
 })
 
-app.use(express.static('style'))
-app.use(express.static('images'))
-app.use(bodyparser.urlencoded({extended: false}))
-app.use(bodyparser.json())
-app.use(cors())
+//Configurações dos módulos
+    //Configurações de sessão
+    app.use(session({
+        secret: "toroinvestimentos",
+        resave: true,
+        saveUninitialized: true
+    }))
+    app.use(passport.initialize())
+    app.use(passport.session())
+    //Configurações de arquivos estáticos
+    app.use(express.static('style'))
+    app.use(express.static('images'))
 
-app.set('views', "./views")
-app.set('view engine', 'ejs')
+    //Configurações do body-parser
+    app.use(bodyparser.urlencoded({extended: false}))
+    app.use(bodyparser.json())
 
-app.use(routes) // Importando as rotas
+    //Configurando a view-engine
+    app.set('views', "./views")
+    app.set('view engine', 'ejs')
 
-//Rotas
-/*
-app.get('/', (req, res) => {
-    return res.render('index')
-})
+    //Importando o arquivo de rotas
+    app.use(routes)
 
-app.get('/register', (req, res) =>{
-    res.render('register')
-})
-
-app.get('/signup', (req, res) =>{
-    res.render('signin')
-})
-
-app.post('/register/auth', (req, res) => {
-    res.send("dados coletados" + req.body.name + req.body.email)
-})*/
-
+//Inicializando a aplicação na porta 3456
 app.listen(3456)
 
